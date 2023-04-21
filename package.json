@@ -1,0 +1,29 @@
+{
+  "name": "anymator",
+  "version": "1.0.0",
+  "description": "A simple react library which help in applying the compllex animation with single line of code and which is completely modifyable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdarshRathore223/Any_mator.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdarshRathore223/Any_mator/issues"
+  },
+  "homepage": "https://github.com/AdarshRathore223/Any_mator#readme",
+  "devDependencies": {
+    "@types/react": "^18.0.37",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
