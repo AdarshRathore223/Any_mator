@@ -21,8 +21,8 @@ body
 
 #app_name path:nth-child(1)
 {
-    stroke-dasharray: 130px;
-    stroke-dashoffset: 23px;
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 13px;
 }
 
 #app_name path:nth-child(2)
