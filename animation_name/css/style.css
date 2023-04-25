@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial;
+    font-size: 16px;
+    margin: 0;
+    background: #021841;
+}
+svg text{
+    stroke: #0ed1c1;
+    font-size: 150px;
+    font-weight: 700;
+    stroke-width : 5;
+    color: white;
+}
