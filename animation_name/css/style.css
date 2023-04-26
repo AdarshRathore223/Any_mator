@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,9 +20,17 @@ svg text {
     font-size: 150px;
     font-weight: 700;
     stroke-width: 5;
+    animation: textAnimate 6s forwards;
+    text-shadow: 0px 0px 25px rgb(255, 255, 255);
+    font-family: 'Bruno Ace SC', cursive;
+    /* font-family: 'Orbitron', sans-serif; */
+    stroke-width: 0.1px;
     fill: transparent;
-    animation: textAnimate 20s forwards;
-    text-shadow: 0px 0px 50px rgb(255, 255, 255);
+    stroke-dasharray: 0 10px;
+    x:"50%";
+    y:"50%" ;
+    fill:"transparent" ;
+    text-anchor:"middle";
 
 
 
@@ -26,26 +38,28 @@ svg text {
 
 @keyframes textAnimate {
     0% {
-        stroke-dasharray: 0 50%;
-
+        stroke-dasharray: 0 10px;
+    
     }
 
     50% {
-        stroke-dasharray: 50% 0;
+        /* stroke-dasharray: 50% 0; */
+        fill: white;
     }
 
     100% {
-        stroke-dasharray: 0 50%;
+        /* stroke-dasharray: 0 50%; */
+        fill: transparent;
     }
 }
 
 @keyframes textAnimaterev {
-    0% {
+    10% {
         stroke-dasharray: 0 50%;
 
     }
 
-    50% {
+    80% {
         stroke-dasharray: 50% 0;
     }
 
@@ -57,7 +71,9 @@ svg text {
 
 #cumming {
     stroke-dasharray: 0px 10px;
-    animation: textAnimaterev 20s forwards 20s;
+    animation: textAnimaterev 20s forwards 5s;
+        font-family: 'Orbitron', sans-serif;
+        stroke-width: 5px;
 
 }
 
