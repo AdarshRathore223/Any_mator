@@ -4,12 +4,14 @@ export interface ATextprops {
   label: string;
 }
 
-const Button = (props: ATextprops) => {
+const AText = (props: ATextprops) => {
   return (
-    <>
-    <span>{props.label}</span>
-    </>
+    <svg viewBox="0 0 1350 600">
+        <text x="50%" y="50%" fill="Black" text-anchor="middle" >
+            {props.label }
+        </text>
+    </svg>
   );
 };
 
-export default Button;
+export default AText;
