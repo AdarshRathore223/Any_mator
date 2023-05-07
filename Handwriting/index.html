@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>handwriting Text animation</title>
+    <!-- <script src="writing.js"></script> -->
+    <script src="vara.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <a href="" class="hidden"></a>
+    </div>
+
+    <script>
+        var fontSize = 72;
+            if(window.screen.width > 700)
+                fontSize = 32;
+            else if(window.screen.width < 1200)
+                fontSize = 57;
+            var vara = new vara(
+                "#container",
+                "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",
+                [
+                    {
+                        text : "Hi its us...!",
+                        y : 150,
+                        fromCurrentPosition: {y:false},
+                        duration: 3000
+                    },
+
+                    {
+                        text: "The Founder of anymator app",
+                        y: 150,
+                        fromCurrentPosition: {y:false},
+                        delay: 3000,
+                        duration: 3000
+                    },
+                    
+                ],
+                {
+                    strokeWidth: 2,
+                    color:"#fff",
+                    fontSize:fontSize,
+                    textAlign:"center"
+                }
+            );
+
+            vara.ready(function()
+            {
+                var erase = true;
+                vara.animationEnd(function(i,o)
+                {
+                    if(i == "no_erase") erase = false;
+                    if(erase)
+                    {
+                        o.container.style.transition = "opacity 1s 1s";
+                        o.container.style.opacity = 0;
+                    }
+                })
+            });
+
+    </script>
+</body>
+
+
+</html>

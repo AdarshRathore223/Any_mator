@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom right, rgb(225, 34, 111), rgb(25, 0, 255));
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+
+#container{
+    width: 80%;
+    margin: 20px, auto;
+    min-height: 700px;
+    margin-top: 150px;
+}
