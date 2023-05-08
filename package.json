@@ -48,7 +48,7 @@
   "types": "dist/index.d.ts",
   "dependencies": {
     "@storybook/addon-storysource": "^7.0.7",
-    "@storybook/addon-styling": "^1.0.5",
+    "@storybook/addon-styling": "^1.0.6",
     "sass": "^1.62.1",
     "scss": "^0.2.4"
   }

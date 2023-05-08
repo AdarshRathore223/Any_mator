@@ -25,31 +25,23 @@ svg text {
     font-family: 'Bruno Ace SC', cursive;
     /* font-family: 'Orbitron', sans-serif; */
     stroke-width: 0.1px;
-    fill: transparent;
+    // fill: transparent;
     stroke-dasharray: 0 10px;
-    x: "50%";
-    y: "50%";
-    fill: "transparent";
-    text-anchor: "middle";
+
 
 
 
 }
 
 @keyframes textAnimate {
-    0% {
-        stroke-dasharray: 0 10px;
-
+    10%{
+        opacity: 0%;
     }
-
-    50% {
-        /* stroke-dasharray: 50% 0; */
-        fill: white;
+    50%{
+        opacity: 100%;
     }
-
-    100% {
-        /* stroke-dasharray: 0 50%; */
-        fill: transparent;
+    100%{
+        opacity: 0%;
     }
 }
 
