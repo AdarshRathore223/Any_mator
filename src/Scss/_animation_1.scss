@@ -1,0 +1,83 @@
+// @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// svg{
+//     height: 100vh;
+//     width: 100vw;
+//     fill: black;
+// }
+
+
+svg text {
+    
+
+    // stroke: #ffffff;
+    font-size: 150px;
+    font-weight: 700;
+    stroke-width: 5;
+    animation: textAnimate 6s forwards infinite;
+    text-shadow: 0px 0px 25px rgb(255, 255, 255);
+    font-family: 'Bruno Ace SC', cursive;
+    /* font-family: 'Orbitron', sans-serif; */
+    stroke-width: 0.1px;
+    fill: transparent;
+    stroke-dasharray: 0 10px;
+    x: "50%";
+    y: "50%";
+    fill: "transparent";
+    text-anchor: "middle";
+
+
+
+}
+
+@keyframes textAnimate {
+    0% {
+        stroke-dasharray: 0 10px;
+
+    }
+
+    50% {
+        /* stroke-dasharray: 50% 0; */
+        fill: white;
+    }
+
+    100% {
+        /* stroke-dasharray: 0 50%; */
+        fill: transparent;
+    }
+}
+
+@keyframes textAnimaterev {
+    10% {
+        stroke-dasharray: 0 50%;
+
+    }
+
+    80% {
+        stroke-dasharray: 50% 0;
+    }
+
+    100% {
+        stroke-dasharray: 0 50%;
+    }
+
+}
+
+#cumming {
+    stroke-dasharray: 0px 10px;
+    animation: textAnimaterev 20s forwards 5s;
+    font-family: 'Orbitron', sans-serif;
+    stroke-width: 5px;
+
+}
+
+svg {
+    position: absolute;
+    top: 13%;
+}
