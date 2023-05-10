@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typewriter Effect</title>
+
+    <!-- applying css -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+        h1{
+            
+        }
+        #typewriter
+        {
+            
+        }
+        #cursor
+        {
+            animation: blink 1s linear infinite;
+        }
+
+        @keyframes blink
+        {
+            0% {
+                opacity: 100%;
+            }
+            50%{
+                opacity:0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Typewriter effect using html, css and Javascript -->
+    <div class="container">
+        <h1>Hi! it's us, <span id="typewriter"></span><span id="cursor">|</span></h1>
+    </div>
+
+    <!-- javascript -->
+    <script>
+         function sleep(ms)
+         {
+            return new Promise((resolve) => setTimeout(resolve, ms));
+
+         }
+
+         const list_of_array = ["Developer", "Freelancing", "Designer"];
+         const el = document.getElementById("typewriter");
+
+         let sleeptime = 300;
+         let holdtime =500;
+         let index_array = 0;
+
+         const writeloop = async () => {
+            while (true){
+                let word = list_of_array[index_array];
+                index_array+=1;
+                if (index_array === Object.keys(list_of_array).length){
+                    index_array=0;
+                }
+                console.log(word);
+
+                for(let i=-1; i<word.length; i++)
+                {
+                    el.innerText = word.substring(0, i+1);
+                    await sleep(sleeptime);
+                }
+                console.log("break")
+                await sleep(holdtime);
+            
+            }
+         };
+
+         writeloop();
+    </script>
+</body>
+</html>
